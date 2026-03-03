@@ -1,0 +1,254 @@
+{
+  "citas": [
+    {
+      "id": 1,
+      "texto": "Solos podemos hacer poco; juntos podemos hacer mucho.",
+      "autor": "Helen Keller"
+    },
+    {
+      "id": 2,
+      "texto": "El talento gana partidos, pero el trabajo en equipo y la inteligencia ganan campeonatos.",
+      "autor": "Michael Jordan"
+    },
+    {
+      "id": 3,
+      "texto": "Ninguno de nosotros es tan bueno como todos nosotros juntos.",
+      "autor": "Ray Kroc"
+    },
+    {
+      "id": 4,
+      "texto": "La unidad es fuerza; cuando hay trabajo en equipo y colaboración, se pueden lograr cosas maravillosas.",
+      "autor": "Mattie Stepanek"
+    },
+    {
+      "id": 5,
+      "texto": "Si quieres ir rápido, ve solo. Si quieres llegar lejos, ve acompañado.",
+      "autor": "Proverbio africano"
+    },
+    {
+      "id": 6,
+      "texto": "La grandeza de una comunidad se mide por la compasión y el compromiso de sus miembros.",
+      "autor": "Coretta Scott King"
+    },
+    {
+      "id": 7,
+      "texto": "Nunca dudes que un pequeño grupo de ciudadanos reflexivos y comprometidos puede cambiar el mundo.",
+      "autor": "Margaret Mead"
+    },
+    {
+      "id": 8,
+      "texto": "La mejor forma de encontrarte a ti mismo es perderte en el servicio a los demás.",
+      "autor": "Mahatma Gandhi"
+    },
+    {
+      "id": 9,
+      "texto": "La cooperación es la convicción plena de que nadie puede llegar a la meta si no llegan todos.",
+      "autor": "Virginia Burden"
+    },
+    {
+      "id": 10,
+      "texto": "El éxito es mejor cuando se comparte.",
+      "autor": "Howard Schultz"
+    },
+    {
+      "id": 11,
+      "texto": "La comunidad no es un lugar, es un sentimiento de pertenencia y apoyo mutuo.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 12,
+      "texto": "Juntarse es un comienzo; mantenerse juntos es progreso; trabajar juntos es éxito.",
+      "autor": "Henry Ford"
+    },
+    {
+      "id": 13,
+      "texto": "La solidaridad es la ternura de los pueblos.",
+      "autor": "Gioconda Belli"
+    },
+    {
+      "id": 14,
+      "texto": "Cuando las personas se unen con un propósito común, lo extraordinario se vuelve posible.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 15,
+      "texto": "El servicio a los demás es el alquiler que pagamos por nuestro lugar en la Tierra.",
+      "autor": "Muhammad Ali"
+    },
+    {
+      "id": 16,
+      "texto": "La unión de fuerzas multiplica los resultados.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 17,
+      "texto": "Compartir es construir comunidad.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 18,
+      "texto": "Una comunidad fuerte se construye con pequeñas acciones repetidas con amor.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 19,
+      "texto": "El verdadero progreso surge cuando trabajamos juntos por el bien común.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 20,
+      "texto": "Donde hay unidad, hay esperanza.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 21,
+      "texto": "La empatía es el puente que conecta corazones en una comunidad.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 22,
+      "texto": "Cada acto de colaboración es una semilla de cambio.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 23,
+      "texto": "El trabajo compartido transforma sueños individuales en logros colectivos.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 24,
+      "texto": "Cuando ayudamos a otros a crecer, todos crecemos.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 25,
+      "texto": "La fuerza de la comunidad reside en su diversidad unida por un propósito.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 26,
+      "texto": "El compromiso colectivo convierte los desafíos en oportunidades.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 27,
+      "texto": "Un equipo es más que la suma de sus partes.",
+      "autor": "Aristóteles (atribuido)"
+    },
+    {
+      "id": 28,
+      "texto": "La colaboración es el arte de trabajar juntos hacia un sueño compartido.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 29,
+      "texto": "La comunidad florece cuando cada voz es escuchada.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 30,
+      "texto": "El apoyo mutuo es el cimiento de cualquier logro duradero.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 31,
+      "texto": "Construimos el futuro cuando nos tendemos la mano.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 32,
+      "texto": "La cooperación crea caminos donde antes solo había obstáculos.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 33,
+      "texto": "El trabajo en equipo convierte lo imposible en alcanzable.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 34,
+      "texto": "La confianza compartida fortalece cualquier proyecto común.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 35,
+      "texto": "Juntos sembramos esperanza y cosechamos resultados.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 36,
+      "texto": "Una comunidad unida es una fuente inagotable de inspiración.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 37,
+      "texto": "El respeto mutuo es la base de todo esfuerzo colectivo.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 38,
+      "texto": "La colaboración transforma diferencias en fortalezas.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 39,
+      "texto": "Cada persona aporta una pieza esencial al mosaico comunitario.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 40,
+      "texto": "El verdadero cambio comienza cuando decidimos actuar juntos.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 41,
+      "texto": "La participación activa es el corazón de una comunidad viva.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 42,
+      "texto": "Unidos podemos transformar nuestra realidad.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 43,
+      "texto": "El espíritu de equipo ilumina los momentos más difíciles.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 44,
+      "texto": "La colaboración nos recuerda que nadie está solo.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 45,
+      "texto": "La unión hace que las metas compartidas sean alcanzables.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 46,
+      "texto": "El bien común es el resultado del esfuerzo conjunto.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 47,
+      "texto": "La comunidad es el lugar donde las ideas se convierten en acción colectiva.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 48,
+      "texto": "La cooperación fortalece la esperanza.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 49,
+      "texto": "Cada gesto solidario suma en la construcción de un mundo mejor.",
+      "autor": "Desconocido"
+    },
+    {
+      "id": 50,
+      "texto": "Trabajar juntos nos permite alcanzar horizontes que solos no imaginaríamos.",
+      "autor": "Desconocido"
+    }
+  ]
+}

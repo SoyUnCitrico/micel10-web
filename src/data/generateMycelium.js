@@ -1,4 +1,5 @@
 import externalNodesData from './nodes.json';
+import motivationalText from './motivationalText.json';
 
 const COLOR_PALETTE = ["#00f2ff", "#00ff95", "#22d3ee", "#3b82f6", "#a855f7", "#ef4444"];
 
@@ -74,6 +75,9 @@ export const generateMycelium = (
 ) => {
   const rng = mulberry32(seed);
   const externalNodes = Array.isArray(externalNodesData) ? externalNodesData : [];
+  const motivationalQuotes = Array.isArray(motivationalText?.citas)
+    ? motivationalText.citas
+    : [];
   const nodeLimit = Math.max(maxNodes, (externalNodes.length || 0) + 5);
   const leaves = Array.from({ length: seedLeafCount }, () => randomPointUpward(worldRadius, rng));
 
@@ -205,17 +209,26 @@ export const generateMycelium = (
   }
 
   // Convert to output format with colors and metadata
-  const coloredNodes = nodes.map((n, idx) => ({
-    id: n.id,
-    position: n.position,
-    title: `Nodo ${n.id}`,
-    color: COLOR_PALETTE[n.id % COLOR_PALETTE.length],
-    // Solo los nodos externos pueden ser luminosos; los generados son estándar
-    variant: 'standard',
-    note: randomInt(rng, minMidi, maxMidi),
-    description: `Punto de conexión biológica ${n.id}. Generado por colonización espacial (${iterations} iteraciones).`,
-    image: `https://picsum.photos/seed/${idx}-${n.id}/300/200`
-  }));
+  const coloredNodes = nodes.map((n, idx) => {
+    const quoteIndex = motivationalQuotes.length
+      ? randomInt(rng, 0, motivationalQuotes.length - 1)
+      : null;
+    const quoteText = quoteIndex !== null ? motivationalQuotes[quoteIndex]?.texto : null;
+    const quoteAuthor = quoteIndex !== null ? motivationalQuotes[quoteIndex]?.autor : null;
+    const description = quoteText || `Punto de conexión biológica ${n.id}. Generado por colonización espacial (${iterations} iteraciones).`;
+
+    return {
+      id: n.id,
+      position: n.position,
+      title: !!quoteAuthor ? `${quoteAuthor}` : `Nodo ${n.id}`,
+      color: COLOR_PALETTE[n.id % COLOR_PALETTE.length],
+      // Solo los nodos externos pueden ser luminosos; los generados son estándar
+      variant: 'standard',
+      note: randomInt(rng, minMidi, maxMidi),
+      description,
+      image: `https://picsum.photos/seed/${idx}-${n.id}/300/200`
+    };
+  });
 
   const links = nodes
     .filter((n) => n.parent !== null)
@@ -238,7 +251,6 @@ export const generateMycelium = (
     // Respect spacing
     const tooClose = finalNodes.some((n) => distSq(n.position, position) < minNodeSpacing * minNodeSpacing);
     if (tooClose) return;
-
     const node = {
       id: nextId,
       position,

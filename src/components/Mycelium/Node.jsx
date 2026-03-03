@@ -94,7 +94,7 @@ export function Node({ data, links, allNodes, audioReady, onArmAudio }) {
     e.stopPropagation();
     setSelectedNode(data);
   }, [data, setSelectedNode])
-
+  // console.log('Rendering Node:', data)
   return (
     <group ref={groupRef}>
       <Sphere 
