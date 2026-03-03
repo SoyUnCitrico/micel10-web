@@ -30,3 +30,5 @@ The project uses Vite for bundling and React Three Fiber for rendering; reloadin
 
 ## Media Guidelines
 - Keep large textures, video loops, and audio stems outside the repository and deliver them via a CDN or storage bucket; the project ignores common media extensions and placeholder folders, as defined in [.gitignore](.gitignore).
+
+Changed user
