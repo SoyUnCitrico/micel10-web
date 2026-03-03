@@ -71,7 +71,8 @@ body {
 
 .hero {
   position: relative;
-  padding: clamp(2rem, 3vw, 4rem) clamp(1.5rem, 4vw, 3rem);
+  margin-top: 1rem;
+  padding: clamp(1rem, 3vw, 4rem) clamp(0.5rem, 4vw, 3rem);
   min-height: 95vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -272,7 +273,8 @@ body {
 
 @media (max-width: 640px) {
   .hero {
-    padding-top: 3rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
     gap: 1rem;
   }
 
