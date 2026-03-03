@@ -153,7 +153,7 @@ export default function App() {
       )}
 
       <footer className="site-footer">
-        Made with <span aria-hidden="true"><a href="https://www.tiktok.com/@soy.emme">&hearts;</a></span> by <a href="https://instagram.com/soy.emm3" target="_blank" rel="noreferrer">Emme</a>
+        Hecho con <span aria-hidden="true"><a href="https://www.tiktok.com/@soy.emme">&hearts;</a></span> por <a href="https://instagram.com/soy.emm3" target="_blank" rel="noreferrer">Emme</a>
       </footer>
     </div>
   )

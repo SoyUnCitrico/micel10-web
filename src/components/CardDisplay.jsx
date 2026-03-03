@@ -80,13 +80,14 @@ export function CardDisplay({ node }) {
             border: 'none',
             color: 'white',
             borderRadius: '50%',
-            width: '35px',
-            height: '35px',
+            width: '40px',
+            height: '40px',
             cursor: 'pointer',
-            fontSize: '24px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            fontSize: '20px',
+            display: 'grid',
+            placeItems: 'center',
+            margin: '-4px 0 0 0',
+            padding: '-0px 0px 2px 2px',
             transition: 'all 0.3s ease',
             zIndex: 10
           }}
@@ -151,7 +152,7 @@ export function CardDisplay({ node }) {
           textTransform: 'uppercase',
           fontWeight: '600'
         }}>
-          Click outside or press ESC to return
+          Haz clic fuera o presiona ESC para regresar
         </div>
       </div>
     </>
