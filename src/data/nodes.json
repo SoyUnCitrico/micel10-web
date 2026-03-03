@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Nodo externo A",
+    "description": "Descripción A",
+    "color": "#ffcc00",
+    "image": "https://picsum.photos/seed/extA/300/200",
+    "variant": "luminous",
+    "tone": 40
+  },
+  {
+    "title": "Nodo externo B",
+    "description": "Descripción B",
+    "image": "https://picsum.photos/seed/extB/300/200",
+    "color": "#ff00ff",
+    "variant": "luminous",
+    "tone": 41
+  },
+  {
+    "title": "Nodo externo C",
+    "description": "Descripción C",
+    "image": "https://picsum.photos/seed/extC/300/200",
+    "color": "#00acff",
+    "variant": "luminous",
+    "tone": 42
+  },
+  {
+    "title": "Nodo externo D",
+    "description": "Descripción D",
+    "image": "https://picsum.photos/seed/extD/300/200",
+    "color": "#a0cff0",
+    "variant": "luminous",
+    "tone": 43
+  },
+  {
+    "title": "Nodo externo E",
+    "description": "Descripción E",
+    "image": "https://picsum.photos/seed/extE/300/200",
+    "color": "#ff00aa",
+    "variant": "luminous",
+    "tone": 44
+  },
+  {
+    "title": "Nodo externo F",
+    "description": "Descripción F",
+    "image": "https://picsum.photos/seed/extF/300/200",
+    "color": "#00ffaa",
+    "variant": "luminous",
+    "tone": 45
+  },
+  {
+    "title": "Nodo externo G",
+    "description": "Descripción G",
+    "image": "https://picsum.photos/seed/extG/300/200",
+    "color": "#ffaa00",
+    "variant": "luminous",
+    "tone": 46
+  },
+  {
+    "title": "Nodo externo H",
+    "description": "Descripción H",
+    "image": "https://picsum.photos/seed/extH/300/200",
+    "color": "#aaff00",
+    "variant": "luminous",
+    "tone": 47
+  }
+]
