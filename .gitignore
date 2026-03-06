@@ -24,8 +24,9 @@ dist-ssr
 *.sw?
 
 # Multimedia assets should stay outside version control. Keep large media on a CDN or storage bucket.
-public/
-src/assets//
+public/media/
+public/audio/
+assets/media/
 *.mp4
 *.mov
 *.avi

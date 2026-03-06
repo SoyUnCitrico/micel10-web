@@ -45,6 +45,21 @@ const randomUnit = (rng) => {
 
 const randomInt = (rng, min, max) => Math.floor(rng() * (max - min + 1)) + min;
 
+const G_MINOR_SEMITONES = new Set([0, 2, 3, 5, 7, 8, 10]);
+
+const randomGMinorMidi = (rng, min, max) => {
+  const pool = [];
+  for (let m = min; m <= max; m += 1) {
+    if (G_MINOR_SEMITONES.has(((m % 12) + 12) % 12)) {
+      pool.push(m);
+    }
+  }
+  if (!pool.length) {
+    return randomInt(rng, min, max);
+  }
+  return pool[Math.floor(rng() * pool.length)];
+};
+
 // Upward-biased point (y >= 0) to encourage vertical growth
 const randomPointUpward = (radius, rng) => {
   const p = randomPointInSphere(radius, rng);
@@ -68,8 +83,8 @@ export const generateMycelium = (
     initialRoots = 5,
     rootRadius = 6,
     branchFanoutChance = 0.13,
-    minMidi = 40,
-    maxMidi = 64,
+    minMidi = 52,
+    maxMidi = 76,
     seed = Math.floor(Math.random() * 1e9),
   } = {}
 ) => {
@@ -224,7 +239,7 @@ export const generateMycelium = (
       color: COLOR_PALETTE[n.id % COLOR_PALETTE.length],
       // Solo los nodos externos pueden ser luminosos; los generados son estándar
       variant: 'standard',
-      note: randomInt(rng, minMidi, maxMidi),
+      note: randomGMinorMidi(rng, minMidi, maxMidi),
       description,
       image: `https://picsum.photos/seed/${idx}-${n.id}/300/200`
     };
@@ -258,7 +273,7 @@ export const generateMycelium = (
       color: ext.color || COLOR_PALETTE[nextId % COLOR_PALETTE.length],
       // Externos controlan el brillo; por defecto serán luminosos si no se especifica
       variant: ext.variant || 'luminous',
-      note: typeof ext.note === 'number' ? ext.note : randomInt(rng, minMidi, maxMidi),
+      note: typeof ext.note === 'number' ? ext.note : randomGMinorMidi(rng, minMidi, maxMidi),
       description: ext.description || 'Nodo externo',
       image: ext.image || `https://picsum.photos/seed/external-${idx}/300/200`,
     };

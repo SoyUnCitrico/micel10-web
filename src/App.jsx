@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect, useRef, useCallback } from 'react'
 import { EffectComposer, Bloom, Noise, Vignette } from '@react-three/postprocessing'
 import './App.css'
 import { SceneController } from './components/Mycelium/SceneController'
@@ -11,11 +11,40 @@ import { CardDisplay } from './components/CardDisplay'
 import { startAudio } from './audio/synth'
 import { Hero } from './components/Hero'
 
+const SCENE_AUDIO_URL = 'https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/sounds/creature.mp3'
+
 export default function App() {
   const [seed] = useState(() => Math.floor(Math.random() * 1e9));
   const [maxNodes, setMaxNodes] = useState(25);
   const [audioReady, setAudioReady] = useState(false);
   const [isFogBlowing, setIsFogBlowing] = useState(false);
+  const [sceneAudioPlaying, setSceneAudioPlaying] = useState(false);
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const player = audioRef.current;
+    if (!player) return;
+    const handleCanPlay = () => console.log('Scene audio loaded', player.currentSrc);
+    const handlePlay = () => console.log('Scene audio play event', player.currentSrc);
+    const handleError = () => {
+      const mediaError = player.error;
+      console.error('Scene audio error', {
+        code: mediaError?.code,
+        message: mediaError?.message,
+        currentSrc: player.currentSrc,
+        networkState: player.networkState,
+        readyState: player.readyState,
+      });
+    };
+    player.addEventListener('canplaythrough', handleCanPlay);
+    player.addEventListener('play', handlePlay);
+    player.addEventListener('error', handleError);
+    return () => {
+      player.removeEventListener('canplaythrough', handleCanPlay);
+      player.removeEventListener('play', handlePlay);
+      player.removeEventListener('error', handleError);
+    }
+  }, []);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -38,6 +67,34 @@ export default function App() {
       }
     }
   };
+
+  const startSceneAudio = useCallback(async (restart = false) => {
+    const player = audioRef.current;
+    if (!player) return;
+    if (restart) {
+      player.currentTime = 0;
+    }
+    console.log('Scene audio play requested', { restart, src: SCENE_AUDIO_URL });
+    try {
+      await player.play();
+      setSceneAudioPlaying(true);
+    } catch (err) {
+      console.warn('Scene audio failed to play', err);
+    }
+  }, []);
+
+  const pauseSceneAudio = useCallback(() => {
+    const player = audioRef.current;
+    if (!player) return;
+    player.pause();
+    console.log('Scene audio paused', player.currentSrc);
+    setSceneAudioPlaying(false);
+  }, []);
+
+  const restartSceneExperience = useCallback(() => {
+    setMaxNodes(25);
+    void startSceneAudio(true);
+  }, [startSceneAudio]);
 
   const scrollToScene = () => {
     const sceneNode = document.getElementById('scene')
@@ -63,6 +120,12 @@ export default function App() {
   const handleDescend = () => {
     handleArmAudio()
     scrollToScene()
+    restartSceneExperience()
+  }
+
+  const handleEnableAudioButton = () => {
+    handleArmAudio()
+    restartSceneExperience()
   }
 
   return (
@@ -128,12 +191,41 @@ export default function App() {
           </EffectComposer>
         </Canvas>
 
+        <div className="scene__audio-controls">
+          <button
+            type="button"
+            className="scene__audio-btn"
+            onClick={pauseSceneAudio}
+            disabled={!sceneAudioPlaying}
+          >
+            Pause
+          </button>
+          <button
+            type="button"
+            className="scene__audio-btn"
+            onClick={restartSceneExperience}
+          >
+            Restart
+          </button>
+        </div>
+
         {selectedNode && <CardDisplay node={selectedNode} />}
       </div>
 
+      <audio
+        ref={audioRef}
+        autoPlay={false}
+        preload="auto"
+        loop
+        aria-hidden="true"
+      >
+        <source src={SCENE_AUDIO_URL} type="audio/mp3" />
+        <source src={SCENE_AUDIO_URL} type="audio/mpeg" />
+      </audio>
+
       {!audioReady && (
         <button
-          onClick={handleArmAudio}
+          onClick={handleEnableAudioButton}
           style={{
             position: 'fixed',
             bottom: '20px',

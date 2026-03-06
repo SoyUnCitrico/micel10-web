@@ -1,66 +1,79 @@
 [
   {
-    "title": "Nodo externo A",
-    "description": "Descripción A",
-    "color": "#ffcc00",
-    "image": "https://picsum.photos/seed/extA/300/200",
-    "variant": "luminous",
-    "tone": 40
+    "title": "Micelio",
+    "subtitle": "El micelio: el internet del bosque",
+    "description": "El micelio es la red subterránea de los hongos que conecta plantas y organismos. A través de esta red se transportan nutrientes, energía e información. Un sistema distribuido donde múltiples nodos trabajan juntos para sostener la vida.",
+    "color": "#7DF9FF",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Micelio.png"
   },
   {
-    "title": "Nodo externo B",
-    "description": "Descripción B",
-    "image": "https://picsum.photos/seed/extB/300/200",
-    "color": "#ff00ff",
-    "variant": "luminous",
-    "tone": 41
+    "title": "Señales y redes",
+    "subtitle": "Señales que viajan en una red",
+    "description": "Toda red funciona mediante señales que transportan información. Las señales conectan nodos y permiten que el sistema responda al entorno. Sin comunicación entre nodos, la red deja de existir.",
+    "color": "#5B8CFF",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Red+y+Se%C3%B1ales.png"
   },
   {
-    "title": "Nodo externo C",
-    "description": "Descripción C",
-    "image": "https://picsum.photos/seed/extC/300/200",
-    "color": "#00acff",
-    "variant": "luminous",
-    "tone": 42
+    "title": "Comunicación entre nodos",
+    "subtitle": "Sinapsis: cuando la red piensa",
+    "description": "En el cerebro, las neuronas se comunican mediante sinapsis eléctricas y químicas. Cada conexión crea caminos donde viaja la información y se forman recuerdos. Las ideas también nacen cuando diferentes nodos logran conectarse.",
+    "color": "#3AE3FF",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Red+y+Sinapsis.png"
   },
   {
-    "title": "Nodo externo D",
-    "description": "Descripción D",
-    "image": "https://picsum.photos/seed/extD/300/200",
-    "color": "#a0cff0",
-    "variant": "luminous",
-    "tone": 43
+    "title": "Redes por todos lados",
+    "subtitle": "Redes en la cultura digital",
+    "description": "Internet, la telefonía y las redes neuronales artificiales comparten una estructura común: muchos nodos interconectados que procesan información colectivamente. Estas redes muestran cómo la comunicación distribuida puede escalar a nivel global.",
+    "color": "#8A7DFF",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Redes+internet%2C+Globalizacion+IA.png"
   },
   {
-    "title": "Nodo externo E",
-    "description": "Descripción E",
-    "image": "https://picsum.photos/seed/extE/300/200",
-    "color": "#ff00aa",
-    "variant": "luminous",
-    "tone": 44
+    "title": "San Pedro Muñoztla",
+    "subtitle": "Tradición y trabajo colectivo",
+    "description": "San Pedro Muñoztla es una comunidad construida a partir del trabajo compartido. La iglesia del pueblo ha crecido con el tiempo gracias a la cooperación de sus habitantes. Cada generación agrega algo nuevo al espacio común.",
+    "color": "#B388FF",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/SPM.png"
   },
   {
-    "title": "Nodo externo F",
-    "description": "Descripción F",
-    "image": "https://picsum.photos/seed/extF/300/200",
-    "color": "#00ffaa",
-    "variant": "luminous",
-    "tone": 45
+    "title": "Comunidad",
+    "subtitle": "La comunidad como red viva",
+    "description": "Las comunidades funcionan como redes de colaboración donde cada persona aporta algo distinto. El conocimiento, el trabajo y la cultura se construyen colectivamente. Las redes humanas, como los ecosistemas, solo prosperan cuando los nodos cooperan.",
+    "color": "#FF7AF6",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Comunidad.png"
   },
   {
-    "title": "Nodo externo G",
-    "description": "Descripción G",
-    "image": "https://picsum.photos/seed/extG/300/200",
-    "color": "#ffaa00",
-    "variant": "luminous",
-    "tone": 46
+    "title": "Yo, un nodo más",
+    "subtitle": "Emmanuel Arenas",
+    "description": "Artista audiovisual, desarrollador creativo y productor musical. Mi práctica explora la relación entre tecnología, redes y narrativas digitales. Trabajo en la intersección entre arte, programación y sistemas interactivos.",
+    "color": "#FF5EDB",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Slide+16_9+-+2.png"
   },
   {
-    "title": "Nodo externo H",
-    "description": "Descripción H",
-    "image": "https://picsum.photos/seed/extH/300/200",
-    "color": "#aaff00",
-    "variant": "luminous",
-    "tone": 47
+    "title": "Electrónica",
+    "subtitle": "Construir y conectar dispositivos",
+    "description": "Formación en ingeniería electrónica y comunicaciones. Experiencia en interfaces físicas, sensores, sistemas de control y conexiones de hardware. Interés en desmontar, entender y reconfigurar dispositivos tecnológicos.",
+    "color": "#66FFD9",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Electronica.png"
+  },
+  {
+    "title": "Programación, música y diseño 3D",
+    "subtitle": "Herramientas para crear sistemas",
+    "description": "Programación creativa para audio, visuales generativos e interacción. Producción musical y diseño de sistemas sonoros para performance. Exploración de prototipado y modelado 3D para construir objetos e interfaces.",
+    "color": "#2BFFB9",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Web+e+Interfaces.png"
+  },
+  {
+    "title": "Reciclaje y reapropiación",
+    "subtitle": "Tecnología desde los residuos",
+    "description": "Los dispositivos electrónicos obsoletos aún contienen circuitos, sensores y procesadores funcionales. Reutilizar estas piezas permite transformar residuos tecnológicos en nuevas herramientas creativas. El reciclaje se convierte así en una forma de reapropiación tecnológica.",
+    "color": "#A6FF6A",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Reparacion%2C+Reciclaje%2C+reutilizacion+de+basura.png"
+  },
+  {
+    "title": "MICEL_10",
+    "subtitle": "Una máquina inspirada en el micelio",
+    "description": "MICEL_10 propone un sistema formado por computadoras recicladas conectadas en red. Cada dispositivo funciona como un nodo que genera sonido, imagen o luz. Más que una máquina, es una metáfora de cómo las redes humanas crean significado.",
+    "color": "#D7FF4F",
+    "image": "https://amazons3-images-micel10.s3.us-east-2.amazonaws.com/diapos/Micel_10.png"
   }
 ]

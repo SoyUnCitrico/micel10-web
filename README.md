@@ -7,6 +7,7 @@ Micelio 3D is an immersive React + React Three Fiber scene that visualizes a liv
 - **Immersive effects:** Ambient fog, Bloom/Noise/Vignette post-processing, drifting particles, and layered gradients keep the space mysterious, while the hero fog and vignette mirror the canvas lighting.
 - **Interactive focus:** Clicking a node stores the current camera snapshot, animates `CameraControls` toward the selected node, and restores the snapshot when closing the node card so the viewer returns to their prior vantage.
 - **Audio safety:** Audio is gated until an intentful gesture enables Tone.js, and a floating `Enable audio` button stays visible until the context is ready.
+- **Ambient soundtrack control:** A hosted AWS S3 MP3 powers the ambient score; the hero CTA restarts that audio along with the procedural network, and dedicated Pause/Restart buttons stay fixed over the canvas so listeners can silence or replay the loop.
 - **Hero carousel:** The hero heroically blends photography of mycelium fragments into a carousel, inviting the user to “Revisa el micelio” before descending into the scene.
 
 ## Running Locally

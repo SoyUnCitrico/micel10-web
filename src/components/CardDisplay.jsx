@@ -57,7 +57,7 @@ export function CardDisplay({ node }) {
           padding: '30px',
           borderRadius: '20px',
           width: '90%',
-          maxWidth: '400px',
+          maxWidth: '560px',
           backdropFilter: 'blur(20px)',
           zIndex: 1000,
           animation: isClosing ? 'scaleOutCard 0.15s ease-in' : 'scaleInCard 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
@@ -109,7 +109,7 @@ export function CardDisplay({ node }) {
           alt={node.title}
           style={{ 
             width: '100%', 
-            height: '200px', 
+            height: '360px', 
             objectFit: 'cover', 
             borderRadius: '12px',
             marginBottom: '20px',
@@ -128,6 +128,18 @@ export function CardDisplay({ node }) {
         }}>
           {node.title}
         </h2>
+
+        {node.subtitle && (
+          <p style={{
+            color: 'rgba(255,255,255,0.75)',
+            fontSize: '0.95rem',
+            margin: '0 0 18px 0',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase'
+          }}>
+            {node.subtitle}
+          </p>
+        )}
         
         {/* Description */}
         <p style={{ 

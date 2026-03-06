@@ -40,5 +40,8 @@ export const useStore = create((set) => ({
   },
   clearCameraSnapshot: () => {
     set({ cameraSnapshot: null })
+  },
+  incrementSceneVersion: () => {
+    set((state) => ({ sceneVersion: state.sceneVersion + 1 }))
   }
 }));

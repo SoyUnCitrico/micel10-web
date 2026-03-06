@@ -52,6 +52,8 @@ const synth = new Tone.PolySynth(Tone.Synth, {
 });
 
 synth.connect(filter);
+// Limit synth volume to 75% of full scale (~-2.5 dB) to keep levels consistent
+synth.volume.value = Tone.gainToDb ? Tone.gainToDb(0.75) : -2.5;
 // Guarded detune modulation to avoid undefined param errors
 if (filter.detune) {
   resDetuneLfo.connect(filter.detune);
